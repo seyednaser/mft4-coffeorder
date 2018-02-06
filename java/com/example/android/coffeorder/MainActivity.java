@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements CoffeListFragment
             details.setCoffe(id);
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.fragment_container, details);
-            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
             ft.addToBackStack(null);
             ft.commit();
         } else {
